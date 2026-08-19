@@ -587,24 +587,25 @@
       display: none
     }
 
-    details.ev>summary .ev-icon {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+    details.ev>summary::before {
+      content: "";
       width: 24px;
       height: 24px;
       flex: none;
       border-radius: 50%;
       background-color: var(--happening-blue);
-      color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.75' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 13px 13px;
       transition: transform var(--t-base) var(--ease-standard), background-color var(--t-fast) var(--ease-standard)
     }
 
-    details.ev[open]>summary .ev-icon {
+    details.ev[open]>summary::before {
       transform: rotate(180deg)
     }
 
-    details.ev>summary:hover .ev-icon {
+    details.ev>summary:hover::before {
       background-color: #1c5cab
     }
 
@@ -2278,7 +2279,7 @@
       </div>
 
       <details class="ev reveal">
-        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>The evidence behind these numbers</summary>
+        <summary>The evidence behind these numbers</summary>
         <div class="evbody">
           <table class="data">
             <tr>
@@ -2460,7 +2461,7 @@
           they
           need. The strongest brand material Hasko owns is set at the lowest visual weight on the page.</p>
         <details class="ev">
-          <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>Technical detail</summary>
+          <summary>Technical detail</summary>
           <div class="evbody">
             <ul>
               <li>The homepage <code>&lt;h1&gt;</code> is the literal string <b>"Home"</b>. Search engines and screen
@@ -3038,7 +3039,7 @@
       </div>
 
       <details class="ev reveal">
-        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>The seven experience dimensions, scored</summary>
+        <summary>The seven experience dimensions, scored</summary>
         <div class="evbody">
           <table class="data">
             <tr>
@@ -3542,7 +3543,7 @@
       <p class="dek reveal">The full finding list, what is worth keeping, and every source.</p>
 
       <details class="ev reveal">
-        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>All 24 findings, by priority</summary>
+        <summary>All 24 findings, by priority</summary>
         <div class="evbody">
           <h4 style="color:var(--crit);margin-top:8px">Critical — 6</h4>
           <table class="data">
@@ -3659,7 +3660,7 @@
       </details>
 
       <details class="ev reveal">
-        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>What is already working, and must be preserved</summary>
+        <summary>What is already working, and must be preserved</summary>
         <div class="evbody">
           <ul>
             <li><b>Performance.</b> 35 requests, ~199KB transferred, content painted in ~1.75s, 287 DOM nodes on a
