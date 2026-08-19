@@ -587,25 +587,24 @@
       display: none
     }
 
-    details.ev>summary::before {
-      content: "";
+    details.ev>summary .ev-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       width: 24px;
       height: 24px;
       flex: none;
       border-radius: 50%;
       background-color: var(--happening-blue);
-      background-image: url("data:data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZXZyb24tZG93bi1pY29uIGx1Y2lkZS1jaGV2cm9uLWRvd24iPjxwYXRoIGQ9Im02IDkgNiA2IDYtNiIvPjwvc3ZnPg==");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 13px 13px;
+      color: #ffffff;
       transition: transform var(--t-base) var(--ease-standard), background-color var(--t-fast) var(--ease-standard)
     }
 
-    details.ev[open]>summary::before {
+    details.ev[open]>summary .ev-icon {
       transform: rotate(180deg)
     }
 
-    details.ev>summary:hover::before {
+    details.ev>summary:hover .ev-icon {
       background-color: #1c5cab
     }
 
@@ -2279,7 +2278,7 @@
       </div>
 
       <details class="ev reveal">
-        <summary>The evidence behind these numbers</summary>
+        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>The evidence behind these numbers</summary>
         <div class="evbody">
           <table class="data">
             <tr>
@@ -2461,7 +2460,7 @@
           they
           need. The strongest brand material Hasko owns is set at the lowest visual weight on the page.</p>
         <details class="ev">
-          <summary>Technical detail</summary>
+          <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>Technical detail</summary>
           <div class="evbody">
             <ul>
               <li>The homepage <code>&lt;h1&gt;</code> is the literal string <b>"Home"</b>. Search engines and screen
@@ -3039,7 +3038,7 @@
       </div>
 
       <details class="ev reveal">
-        <summary>The seven experience dimensions, scored</summary>
+        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>The seven experience dimensions, scored</summary>
         <div class="evbody">
           <table class="data">
             <tr>
@@ -3543,7 +3542,7 @@
       <p class="dek reveal">The full finding list, what is worth keeping, and every source.</p>
 
       <details class="ev reveal">
-        <summary>All 24 findings, by priority</summary>
+        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>All 24 findings, by priority</summary>
         <div class="evbody">
           <h4 style="color:var(--crit);margin-top:8px">Critical — 6</h4>
           <table class="data">
@@ -3660,7 +3659,7 @@
       </details>
 
       <details class="ev reveal">
-        <summary>What is already working, and must be preserved</summary>
+        <summary><span class="ev-icon"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>What is already working, and must be preserved</summary>
         <div class="evbody">
           <ul>
             <li><b>Performance.</b> 35 requests, ~199KB transferred, content painted in ~1.75s, 287 DOM nodes on a
